@@ -12,8 +12,6 @@ Utilizar Java 8.
   Apache Camel
 </h1>
 
-https://github.com/dpalmas/apache-camel/commits/master
-
 <p align="center">Curso de Apache Camel</a>
 </p>
 
