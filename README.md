@@ -17,12 +17,12 @@ Utilizar Java 8.
 
 <p align="center">
   
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/dpalmas/apache-camel?color=0000FF">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/joelandradesp/ApacheCamelAlura?color=0000FF">
 
-  <img alt="License" src="https://img.shields.io/github/license/dpalmas/apache-camel?color=0000FF&logo=MIT">
+  <img alt="License" src="https://img.shields.io/github/license/joelandradesp/ApacheCamelAlura?color=0000FF&logo=MIT">
   
-  <a href="https://github.com/dpalmas/apache-camel/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/dpalmas/apache-camel?color=0000FF">
+  <a href="https://github.com/joelandradesp/ApacheCamelAlura/commits/main">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/joelandradesp/ApacheCamelAlura?color=0000FF">
   </a>
 </p>
 
