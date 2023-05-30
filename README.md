@@ -12,6 +12,8 @@ Utilizar Java 8.
   Apache Camel
 </h1>
 
+https://github.com/dpalmas/apache-camel/commits/master
+
 <p align="center">Curso de Apache Camel</a>
 </p>
 
@@ -19,12 +21,15 @@ Utilizar Java 8.
   
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/joelandradesp/ApacheCamelAlura?color=0000FF">
 
-  <img alt="License" src="https://img.shields.io/github/license/joelandradesp/ApacheCamelAlura?color=0000FF&logo=MIT">
+  <a href="https://github.com/joelandradesp/ApacheCamelAlura/blob/main/LICENSE">
+	<img alt="License" src="https://img.shields.io/github/license/joelandradesp/ApacheCamelAlura?color=0000FF&logo=MIT">
+  </a>
   
   <a href="https://github.com/joelandradesp/ApacheCamelAlura/commits/main">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/joelandradesp/ApacheCamelAlura?color=0000FF">
   </a>
 </p>
+
 
 ### A complexidade da integração
 
