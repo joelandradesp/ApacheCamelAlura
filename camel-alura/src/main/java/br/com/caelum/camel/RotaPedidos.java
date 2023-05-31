@@ -14,7 +14,14 @@ public class RotaPedidos {
 			@Override
 			public void configure() throws Exception {
 				
-				from("file:pedidos?delay=5s").
+				from("file:pedidos?delay=5s&noop=true").
+				log("${id} - ${body}").
+				marshal().xmljson().
+				log("${id}").
+				log("${body}").
+				// Sempre vai ser o mesmo nome e o último Xml lido transformado em Json.
+				// setHeader("CamelFileName", constant("pedido.json")).
+				setHeader("CamelFileName", simple("${file:name.noext}.json")).
 				to("file:saida");
 				
 			}
