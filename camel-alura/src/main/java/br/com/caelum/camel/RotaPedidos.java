@@ -15,10 +15,14 @@ public class RotaPedidos {
 			public void configure() throws Exception {
 				
 				from("file:pedidos?delay=5s&noop=true").
-				log("${id} - ${body}").
+				split().xpath("/pedido/itens/item").
+				//log("${id}").
+				//log("${body}").
+				//filter().xpath("pedido/itens/item/formato[text()='EBOOK']").
+				filter().xpath("/item/formato[text()='EBOOK']").
+				log("${id} \n ${body}").
 				marshal().xmljson().
-				log("${id}").
-				log("${body}").
+				//log("${body}").
 				// Sempre vai ser o mesmo nome e o último Xml lido transformado em Json.
 				// setHeader("CamelFileName", constant("pedido.json")).
 				setHeader("CamelFileName", simple("${file:name.noext}.json")).
