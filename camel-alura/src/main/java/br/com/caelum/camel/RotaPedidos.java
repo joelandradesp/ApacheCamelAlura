@@ -1,6 +1,7 @@
 package br.com.caelum.camel;
 
 import org.apache.camel.CamelContext;
+import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.impl.DefaultCamelContext;
 
@@ -25,7 +26,9 @@ public class RotaPedidos {
 				//log("${body}").
 				// Sempre vai ser o mesmo nome e o último Xml lido transformado em Json.
 				// setHeader("CamelFileName", constant("pedido.json")).
-				setHeader("CamelFileName", simple("${file:name.noext}.json")).
+				// setHeader("CamelFileName", simple("${id}.json")) .
+				// setHeader("CamelFileName", simple("${file:name.noext}.json")).
+				setHeader(Exchange.FILE_NAME, simple("${file:name.noext}-${header.CamelSplitIndex}.json")).
 				to("file:saida");
 				
 			}
